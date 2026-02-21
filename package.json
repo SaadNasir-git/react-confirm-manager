@@ -1,0 +1,49 @@
+{
+  "name": "react-confirm-manager",
+  "version": "1.0.0",
+  "description": "An async, container-scoped confirmation manager for React with fully customizable dialogs.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SaadNasir-git/react-confirm-manager.git"
+  },
+  "homepage": "https:/SaadNasir-git/react-confirm-manager.github.io",
+  "scripts": {
+    "build": "tsup && cp LICENSE dist/",
+    "build:watch": "tsup --watch",
+    "clean": "rm -rf dist",
+    "postbuild": "echo \"'use client';\" | cat - dist/index.js > temp && mv temp dist/index.js",
+    "prepack": "npm run clean && npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "license": "MIT",
+  "author": "Saad Nasir",
+  "keywords": [
+    "react-confirm",
+    "react-confirm-manager",
+    "react confirm manager",
+    "react confirm",
+    "confirm"
+  ]
+}
