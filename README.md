@@ -1,4 +1,4 @@
-# React Confirm Lite ✨
+# React Confirm Manager ✨
 
 **An async, container-scoped confirmation manager for React with fully customizable dialogs.**
 
